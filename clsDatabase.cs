@@ -12,18 +12,7 @@ using System.Data.SqlClient;
 
             public  clsDatabase() //(string Type)
             {
-                //if(Type.Equals("0")) //0 = Org
-                //{
                 strConnString = System.Configuration.ConfigurationManager.AppSettings["strConnString"].ToString();
-                //}
-                //else if (Type.Equals("1")) //1 = Student
-                //{
-                //    strConnString = System.Configuration.ConfigurationManager.AppSettings["strConnString_Student"].ToString();
-                //}
-                //else
-                //{ 
-                    
-                //}
             }
         public SqlDataReader QueryDataReader(String strSQL)
             {
